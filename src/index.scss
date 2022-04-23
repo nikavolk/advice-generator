@@ -1,0 +1,16 @@
+$lightCyan: hsl(193, 38%, 86%);
+$neonGreen: hsl(150, 100%, 66%);
+$grayBlue: hsl(217, 19%, 38%);
+$darkGrayBlue: hsl(217, 19%, 24%);
+$darkBlue: hsl(218, 23%, 16%);
+
+body {
+  font: 100% Manrope;
+  margin: 0;
+  background-color: $darkBlue;
+  color: $lightCyan;
+}
+
+h1 {
+  color: $neonGreen;
+}
