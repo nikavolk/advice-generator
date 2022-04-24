@@ -3,6 +3,8 @@
 My first API-related project.
 Life advice generator with a "fetch another advice" function.
 
+Made with HTML5, SASS, ReactJS (Axios, useState, useEffect).
+
 # Live URL
 
 https://nvstudio.si/advice-generator/
