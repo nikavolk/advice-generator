@@ -1,3 +1,4 @@
+import Dice from "../Assets/Images/icon-dice.svg";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -7,7 +8,10 @@ const Card = () => {
   const fetchAdvice = () => {
     axios
       .get("https://api.adviceslip.com/advice")
-      .then((res) => setAdvice(res.data.slip));
+      .then((res) => setAdvice(res.data.slip))
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   useEffect(fetchAdvice, []);
@@ -16,13 +20,13 @@ const Card = () => {
     <div className="main">
       <h1>Advice #{advice.id}</h1>
       <h2>“{advice.advice}”</h2>
-      <hr />
+      <div className="divider"></div>
       <button
         onClick={() => {
           fetchAdvice();
         }}
       >
-        More advice
+        <img src={Dice} alt="Roll the Doice. Noice!"></img>
       </button>
     </div>
   );
