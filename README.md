@@ -26,7 +26,7 @@ Fully responsive design.
 - playing with media view for responsive design
 - basics of useState
 - basics of useEffect
-- basics of GIT (commit, push, setting up SSL key) and Github
+- basics of GIT (commit, push) and Github
 
 # Considerations
 
@@ -38,6 +38,5 @@ transform, instead.
 React:
 Could have used fetch instead of the axios addin, had difficulties implementing
 the get function and reading data on it. Lots of Googling and reading docs.
-
 
 Coding challenge by frontendmentor.io
